@@ -1,10 +1,7 @@
 MP-test
 =======
-a map reduce application 
 
-map 
-=======
+Single-Node test environment :
 
-
-reduce 
-=======
+mvn compile
+mvn exec:java -Dexec.mainClass=multiposting.mapreduce.SimTagDriver
