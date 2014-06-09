@@ -10,7 +10,7 @@ the final result will be found under your defined output repository named: {outp
 This project has been tested under single-node cluster. 
 
 The package contains two parts:
-    * common: definition and operation of data structure SingleDirectLinkedList for similar tags
-    * mapreduce: implementations of mapper,reducer
+    +  common: definition and operation of data structure SingleDirectLinkedList for similar tags 
+    +  mapreduce: implementations of mapper,reducer 
     
     
