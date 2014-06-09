@@ -13,6 +13,6 @@ The /src/java/multiposting package contains two parts:
 +  common: definition and operation of data structure SingleDirectLinkedList for similar tags 
 +  mapreduce: implementations of mapper,reducer 
 
-/test/java/multiposting contains all the unit tests and mrunit tests.
+/test/java/multiposting contains all the unit tests and [mrunit tests](https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial).
 
     
