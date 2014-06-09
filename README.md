@@ -10,7 +10,7 @@ the final result will be found under your defined output repository named: **{ou
 This project has been tested under single-node cluster. 
 
 The ./src/main/java/multiposting package contains two parts:
-+  common: definition and operation of data structure SingleDirectLinkedList for similar tags 
++  common: definition and operation of data structure SingleDirectionLinkedList for similar tags 
 +  mapreduce: implementations of mapper,reducer 
 
 ./src/test/java/multiposting contains all the unit tests and [mrunit tests](https://cwiki.apache.org/confluence/display/MRUNIT/MRUnit+Tutorial).
