@@ -7,8 +7,8 @@ import java.io.IOException;
 import org.apache.hadoop.io.Writable;
 
 /**
- * an implementation of {@link Writable} interface, a single-direction linked list
- * head pointer, modification by order of {@link NodeData}
+ * an implementation of {@link Writable} interface, a single-direction linked
+ * list head pointer, modification by order of {@link NodeData}
  * 
  * @author huikan
  * 
@@ -49,11 +49,11 @@ public class TagLinkedListNode implements Writable {
 	}
 
 	/**
-	 * iterate the first 5 tags
+	 * iterate the first 3 tags
 	 * 
 	 * @return tag1\ttag1_multiplicity\tetc..
 	 */
-	public String getTop5SimilarTags() {
+	public String getTop3SimilarTags() {
 		String result = "";
 		TagLinkedListNode pointer = this.next;
 		int counter = 0;
@@ -209,22 +209,23 @@ public class TagLinkedListNode implements Writable {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see org.apache.hadoop.io.Writable#readFields(java.io.DataInput)
 	 */
 	public void readFields(DataInput input) throws IOException {
 
 		String field = input.readUTF();
 
-		this.next = TagLinkedListNode.deSerialize(field).getNext();
+		next = deSerialize(field).getNext();
 
 	}
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see org.apache.hadoop.io.Writable#write(java.io.DataOutput)
 	 */
 	public void write(DataOutput output) throws IOException {
 		output.writeUTF(this.toString());
 	}
-
 }

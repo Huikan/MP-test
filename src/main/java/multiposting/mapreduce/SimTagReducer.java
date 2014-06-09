@@ -32,6 +32,6 @@ public class SimTagReducer extends Reducer<Text, Text, Text, Text> {
 			list.merge(TagLinkedListNode.deSerialize(value.toString()));
 		}
 
-		context.write(inKey, new Text(list.getTop5SimilarTags()));
+		context.write(inKey, new Text(list.toString()));
 	}
 }
